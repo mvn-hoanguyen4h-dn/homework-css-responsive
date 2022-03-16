@@ -1,0 +1,38 @@
+:root {
+    --height: 50px;
+}
+
+* {
+    margin-bottom: 60px;
+}
+
+a:after {
+    content: " through " attr(href);
+}
+
+.block {
+    width: 200px;
+    height: calc(200px - var(--height));
+    background-color: rgb(44, 25, 219);
+}
+
+.block:hover {
+    transform: rotate(30deg);
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.color-box:hover {
+    transform: scale(1.5);
+}
+
+.moving {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, yellow, pink, blue);
+    transform: translate(50px, 40px);
+}
